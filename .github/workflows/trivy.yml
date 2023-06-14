@@ -1,4 +1,4 @@
-name: Trivy Repo Scanning
+name: Trivy Repo Scannin
 on:
   push:
     branches:
