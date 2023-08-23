@@ -18,11 +18,16 @@ jobs:
         uses: PortSwigger/dastardly-github-action@main
         with:
           target-url: 'https://vulnerable-site.azurewebsites.net/'
+
+      - name: Commands
+        run: |
+            ls
+            pwd
           
       - name: Publish
         uses: actions/upload-artifact@v3
         with:
-         path: dastardly-report.xml
+         path: '**/dastardly-report.xml'
 
       - name: Publish Dastardly Scan Report
         if: always()
