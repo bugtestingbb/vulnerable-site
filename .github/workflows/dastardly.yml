@@ -2,7 +2,7 @@ name: Dastardly Scan
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
 
 jobs:
 
